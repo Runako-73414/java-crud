@@ -29,7 +29,7 @@ public class MainView extends VerticalLayout {
         setPadding(true);
         setSpacing(true);
 
-        add(new H2("Contact Management System"));
+        add(new H2("My Contact Management System"));
 
         nameField.setRequired(true);
         emailField.setRequired(true);
@@ -64,7 +64,7 @@ public class MainView extends VerticalLayout {
         add(form, buttons, grid);
 
         // Example records
-        contacts.add(new Contact("Alice Smith", "alice@example.com"));
+        contacts.add(new Contact("Priveledge 73402", "73402@example.com"));
         contacts.add(new Contact("John Brown", "john@example.com"));
 
         refreshGrid();
@@ -80,7 +80,7 @@ public class MainView extends VerticalLayout {
 
         refreshGrid();
         clearForm();
-        Notification.show("Contact added successfully");
+        Notification.show("Contact added successfully!");
     }
 
     private void updateContact() {
@@ -96,7 +96,7 @@ public class MainView extends VerticalLayout {
 
         refreshGrid();
         clearForm();
-        Notification.show("Contact updated successfully");
+        Notification.show("Contact updated successfully!");
     }
 
     private void deleteContact() {
@@ -108,7 +108,7 @@ public class MainView extends VerticalLayout {
         contacts.remove(selectedContact);
         refreshGrid();
         clearForm();
-        Notification.show("Contact deleted successfully");
+        Notification.show("Contact deleted successfully!");
     }
 
     private boolean validForm() {
